@@ -1,44 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio html formulario</title>
 </head>
+
 <body>
-    <img src="img/css, html e javascript.png" alt="imagem das tecnologias de Front-end">
-    <h1>Cadastro</h1>
-    <h3>Mentoria Front-end</h3>
-    <label for="name">Nome</label>
-    <input type="text" placeholder="Digite seu nome aqui">
-    <br>
-    <label for="email">Email</label>
-    <input type="text" placeholder="Digite seu email aqui">
-    <br><br>
-    <label for="descricao">Descrição</label>
-    <textarea name="descricao" id="" placeholder="Digite uma descrição sobre você aqui"></textarea>
-    <br>
-    <label for="tecnologia">Tecnologia</label>
-    <select name="tecnologia">
-        <option value="">Selecione uma tecnologia</option>
-        <option value="html">HTML</option>
-        <option value="css">CSS</option>
-        <option value="javascript">Javascript</option>
-    </select>
-    <br>
-    <label for="password">Senha</label>
-    <input type="password" placeholder="Digite uma senha">
-    <br>
-    <label for="confirm-password">Confirmar senha</label>
-    <input type="confirm-password" placeholder="Digite uma senha">
-    <br><br>
-    <p>Deseja receber novidades em seu email?</p>
-    <br><br>
-    <label for="sim">Sim</label>
-    <input type="radio">
-    <label for="nao">Não</label>
-    <input type="radio">
-    <br>
-    <button>Cadastrar</button>
+    <header>
+        <img src="img/css, html e javascript.png" alt="imagem das tecnologias de Front-end">
+    </header>
+
+    <main>
+        <h1>Cadastro</h1>
+        <h3>Mentoria Front-end</h3>
+        <form>
+            <label for="name">Nome</label>
+            <input type="text" placeholder="Digite seu nome aqui" required>
+            <br>
+            <label for="email">Email</label>
+            <input type="text" placeholder="Digite seu email aqui" required>
+            <br><br>
+            <label for="descricao">Descrição</label>
+            <textarea name="descricao" id="" placeholder="Digite uma descrição sobre você aqui"></textarea>
+            <br>
+            <label for="tecnologia">Tecnologia</label>
+            <select name="tecnologia">
+                <option value="">Selecione uma tecnologia</option>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="javascript">Javascript</option>
+            </select>
+            <br>
+            <label for="password">Senha</label>
+            <input type="password" placeholder="Digite uma senha" required minlength="8">
+            <br>
+            <label for="confirm-password">Confirmar senha</label>
+            <input type="confirm-password" placeholder="Digite uma senha" required minlength="8">
+            <br><br>
+            <p>Deseja receber novidades em seu email?</p>
+            <br><br>
+            <label for="radio">Sim</label>
+            <input type="radio">
+            <label for="radio">Não</label>
+            <input type="radio">
+            <br>
+            <button>Cadastrar</button>
+        </form>
+
+        <main>
+
 </body>
+
 </html>
