@@ -9,24 +9,24 @@
 
 <body>
     <header>
-        <img src="img/css, html e javascript.png" alt="imagem das tecnologias de Front-end">
+        <img src="img/logo.png" alt="imagem das tecnologias de Front-end">
     </header>
 
     <main>
         <h1>Cadastro</h1>
-        <h3>Mentoria Front-end</h3>
+        <h2>Mentoria Front-end</h2>
         <form>
             <label for="name">Nome</label>
-            <input type="text" placeholder="Digite seu nome aqui" required>
+            <input type="text" placeholder="Digite seu nome aqui" id="name" name="nome" required>
             <br>
             <label for="email">Email</label>
-            <input type="text" placeholder="Digite seu email aqui" required>
+            <input type="text" placeholder="Digite seu email aqui" id="email" name="email" required>
             <br><br>
             <label for="descricao">Descrição</label>
-            <textarea name="descricao" id="" placeholder="Digite uma descrição sobre você aqui"></textarea>
+            <textarea name="descricao" id="descricao" name="descricao" placeholder="Digite uma descrição sobre você aqui"></textarea>
             <br>
             <label for="tecnologia">Tecnologia</label>
-            <select name="tecnologia">
+            <select name="tecnologia" id="tecnologia">
                 <option value="">Selecione uma tecnologia</option>
                 <option value="html">HTML</option>
                 <option value="css">CSS</option>
@@ -34,17 +34,17 @@
             </select>
             <br>
             <label for="password">Senha</label>
-            <input type="password" placeholder="Digite uma senha" required minlength="8">
+            <input type="password" placeholder="Digite uma senha" id="password" required minlength="8">
             <br>
             <label for="confirm-password">Confirmar senha</label>
-            <input type="confirm-password" placeholder="Digite uma senha" required minlength="8">
+            <input type="password" placeholder="Digite uma senha" id="confirm-password" minlength="8">
             <br><br>
             <p>Deseja receber novidades em seu email?</p>
             <br><br>
-            <label for="radio">Sim</label>
-            <input type="radio">
-            <label for="radio">Não</label>
-            <input type="radio">
+            <label for="submit-sim">Sim</label>
+            <input type="radio" name="submit" id="submit-sim">
+            <label for="submit-nao">Não</label>
+            <input type="radio" name="submit" id="submit-nao">
             <br>
             <button>Cadastrar</button>
         </form>
