@@ -42,7 +42,7 @@
     border-radius: 8px;
 }
 
-.profile-container:nth-child(n + 3) {
+.profile-container:nth-child(n + 4) {
     transform: scale(1.1);
     margin: 0 auto 20px auto;
     transition: 300ms linear;
@@ -53,13 +53,6 @@
     cursor: pointer;
 }
 
-.nome-perfil:hover {
-    color: #ffffffc7;
-    cursor: pointer;
-    border-bottom: 4px solid #ffffffc7;
-    transition: 250ms;
-}
-
 .nome-perfil {
     font-family: Inter;
     font-size: 20px;
@@ -68,7 +61,19 @@
     color: #969696;
 }
 
+.nome-perfil:hover {
+color: #ffffffc7;
+    cursor: pointer;
+    border-bottom: 4px solid #ffffffc7;
+    transition: 250ms;
+}
+
 .add-profile,a,img{
     width: 184px;
     height: 163px;
+}
+
+.add-profile:hover {
+    background-color: #8a8a8a71;
+    border-radius: 50%;
 }
